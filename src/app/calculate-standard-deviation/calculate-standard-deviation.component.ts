@@ -14,6 +14,7 @@ export class CalculateStandardDeviationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+        this.dataError = " "
   }
   converStringToData() {
     let valid = false;
