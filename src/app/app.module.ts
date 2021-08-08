@@ -4,10 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
+import { CalculateStandardDeviationComponent } from './calculate-standard-deviation/calculate-standard-deviation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalculateStandardDeviationComponent
   ],
   imports: [
     BrowserModule,
