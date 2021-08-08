@@ -5,20 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 import { CalculateStandardDeviationComponent } from './calculate-standard-deviation/calculate-standard-deviation.component';
+import { StandardDeviationDirective } from './directives/standard-deviation.directive';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculateStandardDeviationComponent,
-    calcStandardDeviation
+    StandardDeviationDirective,
   ],
-  imports: [
-    BrowserModule,
-    UserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, UserModule, AppRoutingModule,FormsModule,ReactiveFormsModule],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

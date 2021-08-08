@@ -1,19 +1,25 @@
-<hr> Data (comma separated)
-<textarea class="dataInput" rows="3"
-[date]="dataString"
+<div class="container">
+  <div>
+    Data (comma separated)
+  </div>
+  <textarea 
+class="dataInput" 
+rows="5"
+[userInputData]="dataInput"
+(standardDeviationEvent)="calculatedSD($event)"
 appStandardDeviation
 [(ngModel)]="dataString">
 </textarea>
 <br>
 <div>{{dataError}}</div>
-<hr>
 <ul>
   <li>
     <button (click)="calculateSD()">Calculate</button>
   </li>
 </ul>
-<hr>
 <b>Answer:</b>
 <h1 id="result">
   {{answer}}
 </h1>
+</div>
+
