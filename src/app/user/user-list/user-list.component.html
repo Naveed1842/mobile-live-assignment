@@ -1,6 +1,7 @@
-
+<div class="mt">
+    <user-create (newItemEvent)="addUserIntoList($event)"> </user-create>
+</div>
 <div class="container">
-    <user-create> </user-create>
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
@@ -11,9 +12,9 @@
         </thead>
         <tbody>
             <tr *ngFor="let user of users">
-                <td>{{user.name}} </td>
-                <td>{{user.age}}</td>
-                <td>{{user.gender}}</td>
+                <td>{{user?.name}} </td>
+                <td>{{user?.age}}</td>
+                <td>{{user?.gender}}</td>
             </tr>
         </tbody>
     </table>
