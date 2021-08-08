@@ -1,1 +1,19 @@
-<p>calculate-standard-deviation works!</p>
+<hr> Data (comma separated)
+<textarea class="dataInput" rows="3"
+[date]="dataString"
+appStandardDeviation
+[(ngModel)]="dataString">
+</textarea>
+<br>
+<div>{{dataError}}</div>
+<hr>
+<ul>
+  <li>
+    <button (click)="calculateSD()">Calculate</button>
+  </li>
+</ul>
+<hr>
+<b>Answer:</b>
+<h1 id="result">
+  {{answer}}
+</h1>
