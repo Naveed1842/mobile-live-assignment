@@ -9,7 +9,8 @@ import { CalculateStandardDeviationComponent } from './calculate-standard-deviat
 @NgModule({
   declarations: [
     AppComponent,
-    CalculateStandardDeviationComponent
+    CalculateStandardDeviationComponent,
+    calcStandardDeviation
   ],
   imports: [
     BrowserModule,
