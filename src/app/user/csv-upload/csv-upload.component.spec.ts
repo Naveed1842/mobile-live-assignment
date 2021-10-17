@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserListComponent } from './user-list.component';
+import { CsvUploadComponent } from './csv-upload.component';
 
-describe('UserListComponent', () => {
-  let component: UserListComponent;
-  let fixture: ComponentFixture<UserListComponent>;
+describe('CsvUploadComponent', () => {
+  let component: CsvUploadComponent;
+  let fixture: ComponentFixture<CsvUploadComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserListComponent ]
+      declarations: [ CsvUploadComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserListComponent);
+    fixture = TestBed.createComponent(CsvUploadComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

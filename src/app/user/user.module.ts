@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UserListComponent } from './user-list/user-list.component';
-import { UserCreateComponent } from './user-create/user-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { CsvUploadComponent } from './csv-upload/csv-upload.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: UserListComponent,
+    component: CsvUploadComponent,
   }
 ];
 @NgModule({
-  declarations: [UserListComponent, UserCreateComponent],
+  declarations: [CsvUploadComponent],
   imports: [CommonModule, FormsModule, ReactiveFormsModule,RouterModule.forChild(routes)]
 })
 export class UserModule {}
